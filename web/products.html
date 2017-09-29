@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SHIORI's Home Page</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+    var pageTop = $('.page-top');
+    pageTop.hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 800) {
+            pageTop.fadeIn();
+        } else {
+            pageTop.fadeOut();
+        }
+    });
+    pageTop.click(function () {
+        $('body, html').animate({scrollTop:0}, 500, 'swing');
+        return false;
+    });
+});
+</script>
+</head>
+
+<body>
+<div class="wrapper">
+    <!-- ヘッダー -->
+    <header>
+		<ul id="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="posts.html">Posts</a></li>
+			<li><a href="photo.html">Photo</a></li>
+            <li><a href="products.html">Products</a></li>
+		</ul>
+        <hr>
+    </header>
+    <!-- ヘッダー -->
+
+<div class="body">
+	<div class="products">
+		<h1>Products</h1>
+		<h2>Chromacky合成とガンマ値の調整</h2>
+		<img src="photo_square/shelf67.jpg" width="450px">
+		<img src="photo_square/copy.JPG" width="450px">
+		<p>元画像</p>
+		<img src="photo_square/copy1.jpg" width="450px">
+		<img src="photo_square/copy2.jpg" width="450px"><br>
+		To be continued...
+		</div>
+	<a href="#" class="page-top">PAGE TOP ▲</a>
+</div>
+<!-- フッター -->
+<footer>
+<p>Copyright (C) 2016 SHIORI YASUE All Rights Reserved.</p>
+</footer>
+<!-- フッター -->
+
+</div>
+</body>
+</html>

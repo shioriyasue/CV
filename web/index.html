@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SHIORI's Home Page</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<link rel="stylesheet" href="flexslider.css" type="text/css">
+<script src="jquery.js"></script>
+<script src="jquery.flexslider.js"></script>
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function(){
+    $('.keyvisual').flexslider({
+	controlNav: false,
+    slideshowSpeed: 4000
+});
+  });
+</script>
+</head>
+
+<body>
+<div class="wrapper">
+    <!-- ヘッダー -->
+    <header>
+		<ul id="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="posts.html">Posts</a></li>
+			      <li><a href="photo.html">Photo</a></li>
+            <li><a href="products.html">Products</a></li>
+		</ul>
+        <hr>
+    </header>
+    <!-- ヘッダー -->
+<div class="body">
+	<div class="keyvisual">
+		<ul class="slides">
+    <li>
+      <img src="image/keyvisual2.jpg" width="100%">
+		<h1 class="absolute">SHIORI's Page</h1>
+    </li>
+    <li>
+      <img src="image/keyvisual3.jpg" width="100%">
+	  <h1 class="absolute">SHIORI's Page</h1>
+    </li>
+    <li>
+      <img src="image/keyvisual1.jpg" width="100%">
+      <h1 class="absolute">SHIORI's Page</h1>
+	</li>
+	<li>
+      <img src="image/keyvisual4.jpg" width="100%">
+		<h1 class="absolute">SHIORI's Page</h1>
+    </li>
+  </ul>
+		
+	</div>
+</div>
+<!-- フッター -->
+<footer>
+<p>Copyright (C) 2016 SHIORI YASUE All Rights Reserved.</p>
+</footer>
+<!-- フッター -->
+
+</div>
+</body>
+</html>

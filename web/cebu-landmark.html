@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SHIORI's Home Page</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+    var pageTop = $('.page-top');
+    pageTop.hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 800) {
+            pageTop.fadeIn();
+        } else {
+            pageTop.fadeOut();
+        }
+    });
+    pageTop.click(function () {
+        $('body, html').animate({scrollTop:0}, 500, 'swing');
+        return false;
+    });
+});
+
+/*$(function() {
+var move = $('.post-left img,.post-right img');
+var scrolltop = $(this).scrollTop();
+var l = $('.post-left img,.post-right img').offset().top;
+$(window).scroll(function () {
+if(l < 200){
+ move.animate({'paddingTop': '5px'},500,'swing');
+} else {
+ move.animate({'paddingTop': '30px'},500,'swing');
+}
+});
+$(window).scroll(function () {
+        if ( $('.post-left img,.post-right img').offset().top < 80) {
+            move.animate({'paddingTop': '5px'},500,'swing');
+		}
+});
+
+});*/
+
+</script>
+</head>
+
+<body>
+<div class="wrapper">
+    <!-- ヘッダー -->
+    <header>
+		<ul id="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="posts.html">Posts</a></li>
+			<li><a href="photo.html">Photo</a></li>
+            <li><a href="products.html">Products</a></li>
+		</ul>
+        <hr>
+    </header>
+    <!-- ヘッダー -->
+
+
+	<div class="side-bar">
+		<a href="posts.html"><i class="fa fa-camera-retro"></i>Today's Photo</a><br>
+		<hr>
+		<a href="disney.html"><i class="fa fa-globe"></i>Disney Sea</a>
+		<hr>
+		<p>Trip to CEBU<br>
+		2015.09.07〜11</p>
+		<a href="cebu-hotel.html"><i class="fa fa-building-o"></i>Hotel</a><br>
+		<a href="cebu-landmark.html"><i class="fa fa-institution"></i>Landmark</a><br>
+		<a href="cebu-activity.html"><i class="fa fa-bicycle"></i>Activity</a><br>
+		<a href="cebu-food.html"><i class="fa fa-cutlery"></i>Food</a><br>
+		<hr>
+		
+	</div>
+
+<div class="body">
+	<div class="post">
+		<h1>CEBU Landmark</h1>
+		<h2>サンペドロ要塞 Fort San Pedro</h2>
+		<div class="post-left">
+			<figure>
+				<img src="photo/sanpedro1.jpg" width="450">
+				<figcaption>
+					<p>＿<br>Fort San Pedro</p>
+				</figcaption>
+			</figure><br>
+			<figure>
+				<img src="photo/IMG_3334.JPG" width="450">
+				<figcaption>
+					<p>＿<br>Fort San Pedro<br>The Founding of CEBU<br>セブ設立までの物語が描かれています</p>
+				</figcaption>
+			</figure><br>
+			<figure>
+				<img src="photo/IMG_3327.JPG" width="450">
+				<figcaption>
+					<p>＿<br>Fort San Pedro<br>Cheese!!</p>
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="photo/sanpedro5.jpg" width="450"><br>
+				<figcaption>
+					<p>＿<br>Fort San Pedro<br>たぶんタバコの葉</p>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="post-right">
+			<figure>
+				<img src="photo/IMG_3335.JPG" width="450"><br>
+				<figcaption>
+					<p>＿<br>Fort San Pedro<br>Entrance<br>APECやってます</p>
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="photo/sanpedro2.jpg" width="450">
+				<figcaption>
+					<p>＿<br>Fort San Pedro<br>貝で作られた壁</p>
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="photo/sanpedro3.jpg" width="450">
+				<br>
+				<figcaption>
+					<p>＿<br>Fort San Pedro<br>大砲</p>
+				</figcaption>
+			</figure>
+		</div>
+		
+		<h2>サント·ニーニョ教会 Basilica del Santo Nino</h2>
+		<div class="post-left">
+			<figure>
+				<img src="photo/santonino1.jpg" width="450">
+				<figcaption>
+					<p>＿<br> Basilica del Santo Nino<br>十字架</p>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="post-right">
+			<figure>
+				<img src="photo/IMG_3348.JPG" width="450">
+				<figcaption>
+					<p>＿<br> Basilica del Santo Nino<br>I dont know who they are.</p>
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="photo/IMG_3342.JPG" width="450">
+				<figcaption>
+					<p>＿<br> Basilica del Santo Nino<br>Stained glass</p>
+				</figcaption>
+			</figure>
+			<br>
+			怪しい人が多く、iPhoneを手に持って歩けませんでした。<br>
+			水とかマンゴーとかキャンドルとか売ってきます。
+		</div>
+		
+	</div>
+	
+	<a href="#" class="page-top">PAGE TOP ▲</a>
+</div>
+<!-- フッター -->
+<footer>
+<p>Copyright (C) 2016 SHIORI YASUE All Rights Reserved.</p>
+</footer>
+<!-- フッター -->
+
+</div>
+</body>
+</html>
+
